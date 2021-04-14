@@ -1,0 +1,124 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!Defines default zoom for mobile devices>
+	<title>Sample Website</title>
+	<link rel="StyleSheet" href="style.css">
+	<link rel="styleSheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <section class="header">
+	<nav>
+		<a href="index.html"><img src="images/logo.png"></a>
+		<div class="nav-links" id="navlinks">
+		 <i class="fa fa-times" onclick="hidemenu()"></i>
+		  <ul>
+		   <li><a href="">GALLERY</a></li>
+		   <li><a href="">PRICING</a></li>
+	           <li><a href="">CONTACT</a></li>
+		</ul>
+		</div>
+	       <i class="fa fa-bars" onclick="showmenu()" ></i>
+	</nav>
+<div class="text-box">
+	<b>-----WELCOME-----</b>
+	<h1>WE ARE DELICIOUS RESTAURANT</h1>
+	<p>Heavy on pork, with ribs & shoulder taking center stage, Memphis-Style
+	<br>BBQ is one of the best of country</p><br>
+	<a href="" class="btn">VIEW MENU</a>
+</div>		
+</section>
+<!----About us---->
+<section class="about">
+	<div style="background-color:red;">
+	<nav1>
+    	  
+		<div class="about-box">
+			<img class="image" src="images/pic1.jpg" align="left">
+		    <b>--------ABOUT US---------</b>
+		    <h1>THE BEST QUALITY RESTAURANT</h1>
+		    <p>These days are all Happy and Free. These days are all share them with me oh baby.
+		    Till the one day when the lady met this fellow and they knew it was much more than a hunch. 
+	 	    Good bye gray sky hello blue.<br> <br><br>
+	 	    There's nothing can hold me when I hold you.Now the world don't move to the beat of just one drum. 
+	 	    What might be right for you may not be right for some. No phone no lights no motor car not a single luxury.
+	            Like Robinson Crusoe it's primitive as can be. Goodbye gray sky hello blue.</p>
+		    
+		</div>
+	</nav1>
+	</div>
+</section >
+<!--------Why us------->
+<section class="why">
+	 <div class="text">
+    		<h4>TRADITIONAL RECIPES,<br> BEST SERVICE.</h4><br>
+    		<a href="" class="btn">ORDER NOW</a>
+  	 </div>
+</section>
+<!---------Hardwork--------->
+<section class="hardwork">
+	<h1>------  HARD WORK  ------</h1><br>
+	<b>OUR TEAM</b><br>
+	<div class="row">
+		<div class="col">
+		  <img class="image" src="images/Randy.jpg"><br><br>
+		  <b>RANDY CRISHEN<br> Manging Director</b>
+		</div>
+		<div class="col">
+		  <img class="image" src="images/aftian.jpg"><br><br>
+		  <b>AFTIAN JANKISCKY<br>Assistant Manging Director</b>
+	        </div>
+		<div class="col">
+		  <img class="image" src="images/adam.jpg"><br><br>
+		  <b>ADAM THOMAS<br>Senior Chief Supervisor</b>
+		</div>
+	</div>
+</section>
+<!---------Contact us------------>
+<section class="contact">
+	<h1>CONTACT US</h1>
+	<div class="register">
+    		<h4>BOOK YOUR TABLE</h4>
+		<form>
+    		<input type="text" placeholder="Name*" size="28"><br><br>
+		<input type="text" placeholder="Phone"size="28"><br><br>
+		<input type="text" placeholder="Date and Time*"size="28"><br><br>
+		<textarea rows="10" cols="30" placeholder="Message*"></textarea><br><br>
+		<a href="" class="btn">SEND</a>
+		</form>
+  	 </div>	
+</section>
+<!------------OUR BENIFITs--------->
+<section class="benifits">
+	<div style="background-color:red;">
+	<nav1>
+	<div class="benifit-box">
+	  <img class="image" src="images/benifit.jpg" align="left">
+	    <b>---- OUR BENIFITS ----</b>
+	    <h2>YOUR MAIN FEATURES</h2><br>
+	    <h1>BENEFIT 1</h1><br>
+	    <p>Add short description of your benefits to show the best of your product, service or event.</p><br>
+	    <h1>BENEFIT 2</h1><br>
+	    <p>Add short description of your benefits to show the best of your product, service or event.</p><br>
+	    <h1>BENEFIT 3</h1><br>
+	    <p>Add short description of your benefits to show the best of your product, service or event.<br> </p>
+	</div>
+	</nav1>
+	</div>
+</section >
+<!------Javascript for menu----->
+<script>
+	var navlinks=document.getElementById("navlinks");
+	function showmenu(){
+		navlinks.style.right="0";
+	}
+	function hidemenu(){
+		navlinks.style.right="-200";
+	}
+</script>
+</body>
+</html>
+
+
+
+
+

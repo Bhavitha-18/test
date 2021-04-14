@@ -1,0 +1,277 @@
+*{
+margin:0;
+padding:0;
+}
+.header{
+	min-height:100%;
+	width=100%;
+	background-image:url(images/Home.jpg);
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+
+nav{
+    display:flex;
+    padding:1% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex:1;
+	text-align:right;
+}
+.nav-links ul li{
+	display:inline-block;/* align horizontally*/
+	padding:8px;
+	position:relative;
+}
+.nav-links ul li a{
+	color:black;
+	text-decoration:none;/*Removes line under text*/
+	font-size:20px;
+}
+.nav-links ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:red;
+	display:block;
+	margin:auto;
+}
+.nav-links ul li:hover:after{/* Used to provide line under text when we go near the text*/
+	width:100%;
+}
+.text-box{
+	width=90%;
+	
+	text-align:center;
+}
+.text-box b{
+	color:turquoise;
+	font-size:40px;
+}
+.text-box h1{
+	color:midnightblue;
+	font-size:62px;
+}
+.text-box p{
+	color:red;
+	font-size:32px;
+}
+.btn{
+	display:inline-block;
+	color:blue;
+	text-decoration:none;
+	border:1px;
+	padding:12px 34px;
+	font-size:20px;
+	background:red;
+}
+.btn:hover{
+	border:1px;
+	background:white;
+}
+nav .fa{
+	display:none;
+}
+/*****************For smaller screens*********************/
+@media(max-width:768px){
+ .text-box h1{
+	font-size:30px;
+}
+ .nav-links ul li{
+	display:block;
+}
+ .nav-links{
+	position:absolute;
+	background:Red;
+	height:200vh;
+	width:200px;
+	top:0;
+	right:-200;/*to hidden menu*/
+	text-align:left;
+	z-index:2;
+	
+}
+nav .fa{
+	display:block;
+	color:White;
+	margin:10px;
+	font size:22px;
+	cursor:pointer;
+}
+}
+/*--------------------------------about------------------------------*/
+.about-box{
+	text-align:center;
+	width:100%	
+}
+.image{
+	width:none;
+}
+.about-box b{
+	color:blue;
+	font-size:20px;
+}
+.about-box h1{
+	color:white;
+	font-size:40px;
+}
+.about-box p{
+	color:black;
+	font-size:25px;
+	text-align:left;
+}
+nav1{
+    display:flex;
+    padding:1% 6%;
+    
+}
+nav1 img{
+	width: 300px;
+	padding:10%;
+}
+@media(max-width:768px){
+.image{
+	display:block;
+	width:80%;
+	padding-bottom:30px;
+}
+
+}
+/*********Why box********/
+.why{
+	min-height:100%;
+	width:100%;
+	background-image:url(images/pic2.jpg);
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	
+}
+.text{ 
+	text-align:center;  
+	padding:18px;
+  	border: 5px solid blue;	 
+	width: fit-content; 
+	transform:translate(20%,150%)/*left and top*/
+ 	
+}
+.text:hover{
+	border-color:red;
+	
+}
+.text h4{
+	
+	color:white;
+	font-size:50px;	
+}
+@media(max-width:768px){
+ .text h4{
+	font-size:20px;
+}
+}
+
+/**********HARD WORK************/
+.hardwork{
+	background:white;
+	text-align:center;
+	padding:10%;	
+}
+.row{
+  margin-top:5%;
+  display:flex;
+  justify-content:space-between;
+}
+@media(max-width:768px){
+.row{
+	flex-direction:column;
+}
+.image{
+	display:block;
+	width:100%;
+	padding-bottom:30px;
+}
+}
+/***********Contact us***********/
+.contact{
+	min-height:100vh;
+	width=100%;
+	background-image:url(images/contact.jpg);
+	background-size:cover;
+	
+}
+.contact h1{
+	color:red;
+	font-size30px;
+	transform:translate(10%,680%)/*specifies the position where the text to be placed*/
+}
+.register{ 
+	text-align:center;
+  	padding: 18px;  
+  	border: 5px solid blue;	 
+	width: fit-content; 
+	transform:translate(20%,50%)
+ 	
+}
+.register:hover{
+	border-color:red;
+	
+}
+.register h4{
+	
+	color:white;
+	font-size:50px;	
+}
+@media(max-width:768px){
+ .register h4{
+	font-size:20px;
+}
+}
+
+/**************BENIFITS************/
+.benifit-box{
+	text-align:center;
+	width:100%;
+}
+.benifit-box b{
+	color:white;
+	font-size:30px;
+}
+.image{
+	width:none;
+}
+.benifit-box h1{
+	color:white;
+	font-size:30px;
+}
+.benifit-box h2{
+	color:white;
+	font-size:40px;
+}
+.benifit-box p{
+	color:white;
+	font-size:20px;
+	text-align:left;
+}
+nav1{
+    display:flex;
+    padding:1% 6%;
+    
+}
+nav1 img{
+	width: 500px;
+	padding:5%;
+}
+@media(max-width:768px){
+.image{
+	display:block;
+	width:100%;
+	padding-bottom:30px;
+}
+}
+
